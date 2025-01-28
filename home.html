@@ -1,0 +1,2285 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/> -->
+		<link rel="stylesheet" href="./stellar-css/style.css" />
+		<!-- <script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script> -->
+		<script defer src="./stellar-js/script.js"></script>
+		<title>Stellermart</title>
+	</head>
+	<body>
+		<div class="Home page">
+			<nav>
+				<div class="nav-wrapper flex-between">
+					<div class="logo-div flex gp-5">
+						<span class="logo-icon">
+							<img src="../assets/svg/logo.svg" alt="logo icon image" />
+						</span>
+						<span class="logo-text">Stellarmart</span>
+					</div>
+					<ul class="nav-links-container flex gp-10">
+						<li><a href="#" class="nav-link">Home</a></li>
+						<li><a href="#" class="nav-link">About</a></li>
+						<li>
+							<a href="#" class="nav-link">
+								<span class="flex gp-10">
+									Shop
+									<svg
+										width="8"
+										height="5"
+										viewBox="0 0 8 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7.52 -0.000110626L4.24 3.30656C4.16889 3.35989 4.08889 3.38656 4 3.38656C3.91111 3.38656 3.83111 3.35989 3.76 3.30656L0.48 -0.000110626L0 0.479889L3.28 3.75989C3.49333 3.95544 3.73333 4.05322 4 4.05322C4.26667 4.05322 4.50667 3.95544 4.72 3.75989L8 0.479889L7.52 -0.000110626Z"
+											fill="black"
+										/>
+									</svg>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link">
+								<span class="flex gp-10">
+									Vendors
+									<svg
+										width="8"
+										height="5"
+										viewBox="0 0 8 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7.52 -0.000110626L4.24 3.30656C4.16889 3.35989 4.08889 3.38656 4 3.38656C3.91111 3.38656 3.83111 3.35989 3.76 3.30656L0.48 -0.000110626L0 0.479889L3.28 3.75989C3.49333 3.95544 3.73333 4.05322 4 4.05322C4.26667 4.05322 4.50667 3.95544 4.72 3.75989L8 0.479889L7.52 -0.000110626Z"
+											fill="black"
+										/>
+									</svg>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link">
+								<span class="flex gp-10">
+									Blogs
+									<svg
+										width="8"
+										height="5"
+										viewBox="0 0 8 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7.52 -0.000110626L4.24 3.30656C4.16889 3.35989 4.08889 3.38656 4 3.38656C3.91111 3.38656 3.83111 3.35989 3.76 3.30656L0.48 -0.000110626L0 0.479889L3.28 3.75989C3.49333 3.95544 3.73333 4.05322 4 4.05322C4.26667 4.05322 4.50667 3.95544 4.72 3.75989L8 0.479889L7.52 -0.000110626Z"
+											fill="black"
+										/>
+									</svg>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link">
+								<span class="flex gp-10">
+									Pages
+									<svg
+										width="8"
+										height="5"
+										viewBox="0 0 8 5"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M7.52 -0.000110626L4.24 3.30656C4.16889 3.35989 4.08889 3.38656 4 3.38656C3.91111 3.38656 3.83111 3.35989 3.76 3.30656L0.48 -0.000110626L0 0.479889L3.28 3.75989C3.49333 3.95544 3.73333 4.05322 4 4.05322C4.26667 4.05322 4.50667 3.95544 4.72 3.75989L8 0.479889L7.52 -0.000110626Z"
+											fill="black"
+										/>
+									</svg>
+								</span>
+							</a>
+						</li>
+						<li><a href="#" class="nav-link">Contact</a></li>
+					</ul>
+					<div class="flex gp-20">
+						<div class="search-bar">
+							<input type="text" placeholder="Search for Product" />
+							<span class="search-icon-span">
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M9.93946 9.11412C10.6582 8.21557 11.088 7.0758 11.088 5.83565C11.088 2.93483 8.73646 0.583252 5.83565 0.583252C2.93483 0.583252 0.583252 2.93483 0.583252 5.83565C0.583252 8.73646 2.93483 11.088 5.83565 11.088C7.0758 11.088 8.21557 10.6582 9.11412 9.93946L12.4203 13.2457C12.6482 13.4736 13.0177 13.4736 13.2457 13.2457C13.4736 13.0177 13.4736 12.6482 13.2457 12.4203L9.93946 9.11412ZM5.83565 9.9267C3.57622 9.9267 1.74459 8.09507 1.74459 5.83565C1.74459 3.57622 3.57622 1.74459 5.83565 1.74459C8.09507 1.74459 9.9267 3.57622 9.9267 5.83565C9.9267 8.09507 8.09507 9.9267 5.83565 9.9267Z"
+										fill="#0F0F0F"
+									/>
+								</svg>
+							</span>
+						</div>
+
+						<span class="mobile-search-icon">
+							<img src="../assets/svg/search-icon.svg" alt="search icon" />
+						</span>
+
+						<span class="cart-icon-span">
+							<svg
+								width="37"
+								height="39"
+								viewBox="0 0 37 39"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M24.875 18.375C24.875 21.8958 22.0208 24.75 18.5 24.75C14.9792 24.75 12.125 21.8958 12.125 18.375M35.5 9.875L31.25 1.375H5.75L1.5 9.875M35.5 9.875H1.5M35.5 9.875V33.25C35.5 35.5972 33.5972 37.5 31.25 37.5H5.75C3.40279 37.5 1.5 35.5972 1.5 33.25V9.875"
+									stroke="black"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+
+							<span class="cart-number-icon">0</span>
+						</span>
+
+						<img
+							class="profile-img"
+							src="../assets/img/profile_avatar.jpeg"
+							alt="A man profile in a black background"
+						/>
+
+						<div class="hamburger flex-column gp-5">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<main>
+				<section class="hero-section mr-t">
+					<div class="wrapper">
+						<div class="hero-banner">
+							<h1 class="page-head-text">
+								Buy More & Save
+								<span>More</span>
+							</h1>
+
+							<a href="#" class="shop-btn">Shop Now</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="category-section mr-t-43">
+					<div class="wrapper">
+						<div class="head-div flex-between">
+							<div class="category-ht-div flex gp-20">
+								<h3 class="section-head-text">Shop by categories</h3>
+								<span class="small-text">All categories</span>
+							</div>
+
+							<div class="category-navigation-div flex gp-10">
+								<button class="btn left">
+									<svg
+										width="14"
+										height="12"
+										viewBox="0 0 14 12"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M13.04 4.96005H3.04L6.32 1.68005L4.88 0.320054L0.56 4.56005C0.186667 4.98672 0 5.46672 0 6.00005C0 6.53339 0.186667 7.01339 0.56 7.44005L4.88 11.6801L6.32 10.3201L3.04 6.96005H13.04V4.96005Z"
+											fill="#7E7E7E"
+										/>
+									</svg>
+								</button>
+								<button class="btn right">
+									<svg
+										width="14"
+										height="12"
+										viewBox="0 0 14 12"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M13.04 4.96005H3.04L6.32 1.68005L4.88 0.320054L0.56 4.56005C0.186667 4.98672 0 5.46672 0 6.00005C0 6.53339 0.186667 7.01339 0.56 7.44005L4.88 11.6801L6.32 10.3201L3.04 6.96005H13.04V4.96005Z"
+											fill="#7E7E7E"
+										/>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="category-items-container flex-scroll mr-t">
+							<div class="category-item-div">
+								<img src="../assets/svg/milks.svg" alt="category image" />
+								<p class="category-item-name">Milks & Diaries</p>
+							</div>
+
+							<div class="category-item-div">
+								<img src="../assets/svg/wine.svg" alt="category image" />
+								<p class="category-item-name">Wines & Alcohol</p>
+							</div>
+
+							<div class="category-item-div">
+								<img src="../assets/svg/cloth.svg" alt="category image" />
+								<p class="category-item-name">Clothing & Beauty</p>
+							</div>
+
+							<div class="category-item-div">
+								<img src="../assets/svg/pet-food.svg" alt="category image" />
+								<p class="category-item-name">Pet Foods & Toy</p>
+							</div>
+
+							<div class="category-item-div">
+								<img src="../assets/svg/packaged-ff.svg" alt="category image" />
+								<p class="category-item-name">Packaged fast food</p>
+							</div>
+
+							<div class="category-item-div">
+								<img
+									src="../assets/svg/baking-material.svg"
+									alt="category image"
+								/>
+								<p class="category-item-name">Baking material</p>
+							</div>
+
+							<div class="category-item-div">
+								<img src="../assets/svg/vegetables.svg" alt="category image" />
+								<p class="category-item-name">Vegetables & tubers</p>
+							</div>
+
+							<div class="category-item-div">
+								<img src="../assets/svg/seafood.svg" alt="category image" />
+								<p class="category-item-name">Fresh Seafood</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="popular-products-section mr-t-43">
+					<div class="wrapper">
+						<div class="head-div flex-between">
+							<div class="category-ht-div flex gp-20">
+								<h3 class="section-head-text">Popular Products</h3>
+							</div>
+
+							<div class="category-tabs-container flex gp-20">
+								<span class="category-tab smaller-text">All</span>
+								<span class="category-tab smaller-text">Milks & Dairies</span>
+								<span class="category-tab smaller-text">Coffes & Teas</span>
+								<span class="category-tab smaller-text">Pet Foods</span>
+								<span class="category-tab smaller-text">Meats</span>
+								<span class="category-tab smaller-text">Vegetables</span>
+								<span class="category-tab smaller-text">Fruits</span>
+							</div>
+
+							<span class="more-icon-span">
+								<img
+									class="more-icon"
+									src="../assets/svg/more-horizontal-svgrepo-com.svg"
+									alt="more icon image"
+								/>
+							</span>
+
+							<div class="drop-down">
+								<ul class="flex-column">
+									<li class="category-name">All</li>
+									<li class="category-name">Milks & Dairies</li>
+									<li class="category-name">Coffes & Teas</li>
+									<li class="category-name">Pet Foods</li>
+									<li class="category-name">Meats</li>
+									<li class="category-name">Vegetables</li>
+									<li class="category-name">Fruits</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="product-items-container grid gp-20 mr-t">
+							<div class="popular-product-item">
+								<span class="attr-tag pink">Hot</span>
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+							<div class="popular-product-item">
+								<span class="attr-tag blue">Sale</span>
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<span class="attr-tag green">New</span>
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<span class="attr-tag orange">-100%</span>
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<span class="attr-tag orange">-50%</span>
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<span class="attr-tag orange">-100%</span>
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<span class="attr-tag pink">Hot</span>
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+
+							<div class="popular-product-item">
+								<span class="attr-tag blue">Sale</span>
+								<img
+									class="popular-product-img"
+									src="../assets/img/popular-product-1.png"
+									alt="product picture"
+								/>
+								<span class="smaller-text product-category">Snack</span>
+								<h4 class="product-item-name">
+									Seeds of Change Organic Quinoe
+								</h4>
+								<div class="rating-container flex gp-5">
+									<div class="star-rating-div flex gp-5">
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gold-star.svg"
+											alt="gold star for rating"
+											class="gold-star"
+										/>
+										<img
+											src="../assets/svg/gray-star.svg"
+											alt="gray star for rating"
+											class="gray-star"
+										/>
+									</div>
+									<span class="rating-value">(4.0)</span>
+								</div>
+								<p class="vendor-name smaller-text">By <span>NestFood</span></p>
+								<div class="pricing-div flex gp-10">
+									<span class="price-tag small-text">$28.85</span>
+									<span class="smallest-text former-price-tag">$32.8</span>
+									<button class="add-cart-btn">
+										<span>
+											<img src="../assets/svg/small-cart.svg" alt="cart icon" />
+										</span>
+										Add
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="deals-section mr-t-43">
+					<div class="wrapper">
+						<div class="head-div flex-between">
+							<h3 class="section-head-text">Deals of the Day</h3>
+
+							<div class="flex gp-10">
+								<span class="deals-cta">All Deals</span>
+								<img
+									src="../assets/svg/right-small-arrow.svg"
+									alt="right arrow icon"
+								/>
+							</div>
+						</div>
+
+						<div class="deals-items-container grid gp-30 mr-t">
+							<div class="deals-item">
+								<img
+									class="deals-img"
+									src="../assets/img/deals-img-1.png"
+									alt="deal image"
+								/>
+								<div class="deals-details-wrapper">
+									<div class="time-div-container flex-wrap gp-10">
+										<div class="time-div flex-column">
+											<span class="time-val">822</span>
+											<span class="time-name">Days</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">08</span>
+											<span class="time-name">hours</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">17</span>
+											<span class="time-name">mins</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">59</span>
+											<span class="time-name">sec</span>
+										</div>
+									</div>
+
+									<div class="deals-details">
+										<span class="smaller-text product-category">Snack</span>
+										<h4 class="product-item-name">
+											Seeds of Change Organic Quinoe
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="deals-item">
+								<img
+									class="deals-img"
+									src="../assets/img/deals-img-1.png"
+									alt="deal image"
+								/>
+								<div class="deals-details-wrapper">
+									<div class="time-div-container flex-wrap gp-10">
+										<div class="time-div flex-column">
+											<span class="time-val">822</span>
+											<span class="time-name">Days</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">08</span>
+											<span class="time-name">hours</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">17</span>
+											<span class="time-name">mins</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">59</span>
+											<span class="time-name">sec</span>
+										</div>
+									</div>
+
+									<div class="deals-details">
+										<span class="smaller-text product-category">Snack</span>
+										<h4 class="product-item-name">
+											Seeds of Change Organic Quinoe
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="deals-item">
+								<img
+									class="deals-img"
+									src="../assets/img/deals-img-1.png"
+									alt="deal image"
+								/>
+								<div class="deals-details-wrapper">
+									<div class="time-div-container flex-wrap gp-10">
+										<div class="time-div flex-column">
+											<span class="time-val">822</span>
+											<span class="time-name">Days</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">08</span>
+											<span class="time-name">hours</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">17</span>
+											<span class="time-name">mins</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">59</span>
+											<span class="time-name">sec</span>
+										</div>
+									</div>
+
+									<div class="deals-details">
+										<span class="smaller-text product-category">Snack</span>
+										<h4 class="product-item-name">
+											Seeds of Change Organic Quinoe
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="deals-item">
+								<img
+									class="deals-img"
+									src="../assets/img/deals-img-1.png"
+									alt="deal image"
+								/>
+								<div class="deals-details-wrapper">
+									<div class="time-div-container flex-wrap gp-10">
+										<div class="time-div flex-column">
+											<span class="time-val">822</span>
+											<span class="time-name">Days</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">08</span>
+											<span class="time-name">hours</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">17</span>
+											<span class="time-name">mins</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">59</span>
+											<span class="time-name">sec</span>
+										</div>
+									</div>
+
+									<div class="deals-details">
+										<span class="smaller-text product-category">Snack</span>
+										<h4 class="product-item-name">
+											Seeds of Change Organic Quinoe
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="deals-item">
+								<img
+									class="deals-img"
+									src="../assets/img/deals-img-1.png"
+									alt="deal image"
+								/>
+								<div class="deals-details-wrapper">
+									<div class="time-div-container flex-wrap gp-10">
+										<div class="time-div flex-column">
+											<span class="time-val">822</span>
+											<span class="time-name">Days</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">08</span>
+											<span class="time-name">hours</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">17</span>
+											<span class="time-name">mins</span>
+										</div>
+
+										<div class="time-div flex-column">
+											<span class="time-val">59</span>
+											<span class="time-name">sec</span>
+										</div>
+									</div>
+
+									<div class="deals-details">
+										<span class="smaller-text product-category">Snack</span>
+										<h4 class="product-item-name">
+											Seeds of Change Organic Quinoe
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="shop-deal-item-container flex-scroll gp-20">
+							<div class="shop-deal-item">
+								<h4 class="mid-head-text">
+									Everyday Fresh & Clean with Our Products
+								</h4>
+								<a href="#" class="shop-cta">Shop Now</a>
+							</div>
+
+							<div class="shop-deal-item">
+								<h4 class="mid-head-text">
+									Everyday Fresh & Clean with Our Products
+								</h4>
+								<a href="#" class="shop-cta">Shop Now</a>
+							</div>
+
+							<div class="shop-deal-item">
+								<h4 class="mid-head-text">
+									Everyday Fresh & Clean with Our Products
+								</h4>
+								<a href="#" class="shop-cta">Shop Now</a>
+							</div>
+
+							<div class="shop-deal-item">
+								<h4 class="mid-head-text">
+									Everyday Fresh & Clean with Our Products
+								</h4>
+								<a href="#" class="shop-cta">Shop Now</a>
+							</div>
+						</div>
+
+						<div class="deals-category-wrapper flex-wrap gp-20 mr-t">
+							<div class="deals-cat-item">
+								<div class="deals-cat-item-head-div">
+									<span class="deal mid-head-text">Top Selling</span>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="deals-cat-item">
+								<div class="deals-cat-item-head-div">
+									<span class="deal mid-head-text">Trending Products</span>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="deals-cat-item">
+								<div class="deals-cat-item-head-div">
+									<span class="deal mid-head-text">Recently added</span>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Pepperidge Farm Farmhouse Hearty White Bread
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="deals-cat-item">
+								<div class="deals-cat-item-head-div">
+									<span class="deal mid-head-text">Top Rated</span>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Foster Farms Takeout Crispy Classic Buffalo Wings
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="flex gp-20 mr-t">
+									<img
+										class="deals-cat-item-img"
+										src="../assets/img/deals-cat-img-1.png"
+										alt="Top selling item image"
+									/>
+									<div class="deals-cat-item-details">
+										<h4 class="product-item-name">
+											Nestle Original Coffee-Mate Coffee Creamer
+										</h4>
+										<div class="rating-container flex gp-5">
+											<div class="star-rating-div flex gp-5">
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gold-star.svg"
+													alt="gold star for rating"
+													class="gold-star"
+												/>
+												<img
+													src="../assets/svg/gray-star.svg"
+													alt="gray star for rating"
+													class="gray-star"
+												/>
+											</div>
+											<span class="rating-value">(4.0)</span>
+										</div>
+										<p class="vendor-name smaller-text">
+											By <span>NestFood</span>
+										</p>
+										<div class="pricing-div flex gp-10">
+											<span class="price-tag small-text">$28.85</span>
+											<span class="smallest-text former-price-tag">$32.8</span>
+											<button class="add-cart-btn">
+												<span>
+													<img
+														src="../assets/svg/small-cart.svg"
+														alt="cart icon"
+													/>
+												</span>
+												Add
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="newsletter-section mr-t-43">
+					<div class="wrapper">
+						<div class="newsletter-wrapper flex">
+							<div class="newsletter-details-container">
+								<h4 class="newsletter-head-text">
+									Stay home & get your daily needs from our shop
+								</h4>
+								<p class="newsletter-desc">
+									Start You'r Daily Shopping with
+									<span class="org-name">stellarmart</span>
+								</p>
+								<div class="newsletter-bar flex gp-10 mr-t-43">
+									<div class="flex gp-10">
+										<img
+											src="../assets/img/message-icon.png"
+											alt="message icon image"
+										/>
+										<input
+											placeholder="Your email address"
+											class="newsletter-input"
+											type="text"
+										/>
+									</div>
+									<button class="subscribe-btn">Subscribe</button>
+								</div>
+							</div>
+
+							<img
+								class="newsletter-banner"
+								src="../assets/img/newsletter-banner.png"
+								alt=""
+							/>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="mr-t-43">
+				<div class="wrapper">
+					<div class="footer-items-container grid">
+						<div class="footer-item flex-column gp-10">
+							<div class="logo-div flex gp-5">
+								<span class="logo-icon">
+									<img src="../assets/svg/logo.svg" alt="logo icon image" />
+								</span>
+								<span class="logo-text">Stellarmart</span>
+							</div>
+
+							<p class="footer-text">Stellermart grocery store website</p>
+							<p class="footer-text">
+								Address: 5171 W Campbell Ave
+								<span class="block-span"
+									>undefined Kent, Utah 53127 United States</span
+								>
+							</p>
+							<p class="footer-text">Call Us:(+91) - 540-025-124553</p>
+							<p class="footer-text">Email:sale@Stellermart.com</p>
+							<p class="footer-text">Hours:10:00 - 18:00, Mon - Sat</p>
+						</div>
+
+						<div class="footer-item flex-column gp-5">
+							<h4>Company</h4>
+
+							<a href="#" class="footer-text">About Us</a>
+							<a href="#" class="footer-text">Delivery Information</a>
+							<a href="#" class="footer-text">Privacy Policy</a>
+							<a href="#" class="footer-text">Terms & Conditions</a>
+							<a href="#" class="footer-text">Contact Us</a>
+							<a href="#" class="footer-text">Support Center</a>
+							<a href="#" class="footer-text">Careers</a>
+						</div>
+
+						<div class="footer-item flex-column gp-5">
+							<h4>Account</h4>
+
+							<a href="#" class="footer-text">Sign In</a>
+							<a href="#" class="footer-text">View Cart</a>
+							<a href="#" class="footer-text">My Wishlist</a>
+							<a href="#" class="footer-text">Track My Order</a>
+							<a href="#" class="footer-text">Help Ticket</a>
+							<a href="#" class="footer-text">Shipping Details</a>
+							<a href="#" class="footer-text">Compare products</a>
+						</div>
+
+						<div class="footer-item flex-column gp-5">
+							<h4>Corporate</h4>
+
+							<a href="#" class="footer-text">Become a Vendor</a>
+							<a href="#" class="footer-text">Affiliate Program</a>
+							<a href="#" class="footer-text">Farm Business</a>
+							<a href="#" class="footer-text">Farm Careers</a>
+							<a href="#" class="footer-text">Our Suppliers</a>
+							<a href="#" class="footer-text">Accessibility</a>
+							<a href="#" class="footer-text">Promotions</a>
+						</div>
+
+						<div class="footer-item flex-column gp-5">
+							<h4>Popular</h4>
+
+							<a href="#" class="footer-text">Milk & Flavoured Milk</a>
+							<a href="#" class="footer-text">Butter and Margarine</a>
+							<a href="#" class="footer-text">Eggs Substitutes</a>
+							<a href="#" class="footer-text">Marmalades</a>
+							<a href="#" class="footer-text">Sour Cream and Dips</a>
+							<a href="#" class="footer-text">Tea & Kombucha</a>
+							<a href="#" class="footer-text">Cheese</a>
+						</div>
+
+						<div class="footer-item">
+							<h5 class="follow-head-text">Follow Us</h5>
+							<p class="follow-desc">
+								Up to 15% discount on your first subscribe
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
