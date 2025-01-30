@@ -919,15 +919,15 @@ i.icon1 {
 	align-items: center;
 }
 
-.nav-link {
+/* .nav-link {
     color: #2b2f4c !important;
-}
+} */
 
 .offcanvas-help-links {
     border: 1px solid #efefef;
     border-radius: 10px;
-    padding: 20px 20px !important;
-    margin: 15px 0 27px !important;
+    padding: 20px 20px ;
+    margin: 15px 0 27px;
 }
 
 .offcanvas-help-links li {
@@ -945,7 +945,7 @@ i.icon1 {
 
 .main_nav .nav-link {
     display: block;
-    padding: 10px 15px !important;
+    padding: 10px 15px;
 	font-size: 14px;
 	cursor: pointer;
 	font-weight: 400;
@@ -2701,7 +2701,7 @@ img.download-btn {
 }
 
 .all-product-grid {
-    margin-top: 64px;
+    margin-top: 34px;
 }
 
 .product-top-dt {
